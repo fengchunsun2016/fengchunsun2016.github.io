@@ -12,11 +12,36 @@
       text-align:center;
       background-color:green;
     }
+    .test2{
+      width:200px;
+      height:200px;
+      line-height:200px;
+      font-size:50px;
+      text-align:center;
+      background-color:red;
+    }
   </style>
 </head>
 <body>
 
 <div class="test">test</div>
+
+<script>
+  var oTest = document.getElementsByClassName('test')[0];
+
+  oTest.onclick = function () {
+    var flag = oTest.getAttribute('class');
+    console.log(flag);
+    if(flag=='test'){
+      console.log(1);
+      oTest.setAttribute('class','test2');
+    }else {
+      console.log(2);
+      oTest.setAttribute('class','test');
+    }
+
+  }
+</script>
 
 </body>
 </html>
