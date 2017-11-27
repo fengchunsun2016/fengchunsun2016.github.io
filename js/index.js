@@ -97,7 +97,7 @@ var phoneRender = (function () {
 
     return {
         init:function () {
-            // phoneBell.play();
+            phoneBell.play();
             $phone.css('display','block');
 
             $listenTouch.tap(listenTouch);
