@@ -1,47 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>test</title>
-  <style>
-    .test{
-      width:200px;
-      height:200px;
-      line-height:200px;
-      font-size:50px;
-      text-align:center;
-      background-color:green;
-    }
-    .test2{
-      width:200px;
-      height:200px;
-      line-height:200px;
-      font-size:50px;
-      text-align:center;
-      background-color:red;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>resume</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="css/index.min.css">
+
+   <!-- <link rel="stylesheet/less" href="css/index.less">
+    <script src="js/less.min.js"></script>-->
+
+    <script>
+        (function () {
+            var winW = document.documentElement.clientWidth;
+            if(winW<640){
+                document.documentElement.style.fontSize = winW/640*100+'px';
+            }
+
+        })();
+
+    </script>
 </head>
 <body>
+<main class="main">
+    <section class="loading" style="opacity: 1">
+        <div class="header">
+            <h1>冯春笋</h1>
+            <h2>君子务本，本立道生</h2>
+        </div>
+        <div class="progress">
+            <span></span>
+        </div>
 
-<div class="test">test</div>
+    </section>
 
-<script>
-  var oTest = document.getElementsByClassName('test')[0];
+    <section class="phone">
+        <header class="header">春笋</header>
+        <div class="time">00:56</div>
+        <div class="listen">
+            <span class="move"></span>
+            <span class="touch"></span>
+        </div>
+        <div class="detail"><span></span></div>
+    </section>
 
-  oTest.onclick = function () {
-    var flag = oTest.getAttribute('class');
-    console.log(flag);
-    if(flag=='test'){
-      console.log(1);
-      oTest.setAttribute('class','test2');
-    }else {
-      console.log(2);
-      oTest.setAttribute('class','test');
-    }
+    <section class="message">
+        <ul class="list clear">
+            <li class="me"><em></em><i></i>繁华声 遁入空门 折煞了世人</li>
+            <li class="boss"><em></em><i></i>梦偏冷 辗转一生情债又几本</li>
+            <li class="boss"><em></em><i></i>如你默认 生死枯等枯等一圈 又一圈的 年轮</li>
+            <li class="me"><em></em><i></i>浮图塔 断了几层 断了谁的魂</li>
+            <li class="me"><em></em><i></i>痛直奔 一盏残灯
+                倾塌的山门</li>
+            <li class="boss"><em></em><i></i>容我再等 历史转身
+                等酒香醇 等你弹
+                一曲古筝</li>
+            <li class="me"><em></em><i></i>雨纷纷 旧故里草木深</li>
+            <li class="boss"><em></em><i></i>我听闻 你始终一个人</li>
+            <li class="me"><em></em><i></i>斑驳的城门 盘踞着老树根
+                石板上回荡的是 再等</li>
+            <li class="boss"><em></em><i></i>雨纷纷 旧故里草木深
+                我听闻 你仍守着孤城</li>
+            <li class="me"><em></em><i></i>城郊牧笛声 落在那座野村
+                缘份落地生根是 我们</li>
+            <li class="boss"><em></em><i></i>听青春 迎来笑声
+                羡煞许多人</li>
+            <li class="me"><em></em><i></i>那史册 温柔不肯
+                下笔都太狠</li>
+            <li class="boss"><em></em><i></i>烟花易冷 人事易分
+                而你在问 我是否还 认真</li>
 
-  }
-</script>
+        </ul>
 
+        <div class="keyBoard">
+            <p class="text"></p>
+            <span class="submit"></span>
+        </div>
+
+    </section>
+
+    <section class="cube">
+        <ul class="cubeBox">
+            <li>首页</li>
+            <li>基本信息</li>
+            <li>技术专长</li>
+            <li>工作经验</li>
+            <li>自我评价</li>
+            <li>over</li>
+        </ul>
+        <div class="tip"><span>魔方</span>:可翻转可点击呦！！</div>
+    </section>
+
+    <section class="swiper-container">
+        <div class="return">返回</div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide page1">
+                <img src="images/r1.jpg" alt="">
+                <div class="arrow"></div>
+            </div>
+            <div class="swiper-slide page2">
+                <dl>
+                    <dt>基本资料</dt>
+                    <dd class="name">姓名：冯春笋</dd>
+                    <dd>性别：男</dd>
+                    <dd>年龄：28</dd>
+                    <dd>民族：汉</dd>
+                    <dd>籍贯：河南南阳</dd>
+                    <dd>学历：大专</dd>
+                    <dd>婚否：否</dd>
+
+                </dl>
+            </div>
+            <div class="swiper-slide page3">
+                <dl>
+                    <dt>技术专长</dt>
+                    <dd>淡定，，，，，，，，，，，，</dd>
+
+                </dl>
+
+            </div>
+            <div class="swiper-slide page4">
+                <dl>
+                    <dt>工作经验</dt>
+                    <dd>待续！！！</dd>
+                    <dt>项目经验</dt>
+                    <dd>待续！！！</dd>
+                </dl>
+            </div>
+            <div class="swiper-slide page5">
+                <dl>
+                    <dt>自我评价</dt>
+                    <dd>生活中：热爱生活，积极乐观，对知识和新技术有着强烈的渴求，具备一定的自学能力，喜欢与人交流；
+                    </dd>
+                    <dd>工作中：积极主动，精益求精，有强烈的团队意识，坚决服从组织安排，坚决传播正能量；</dd>
+                </dl>
+
+            </div>
+            <div class="swiper-slide page6"><div>over</div></div>
+        </div>
+
+    </section>
+
+</main>
+
+<section style="display: none">
+    <audio src="audio/bell.mp3" preload="none" loop id="phoneBell"></audio>
+    <audio src="audio/newLove.mp3" preload="none" id="phoneSay"></audio>
+    <audio src="audio/yanhua.mp3" preload="none" loop id="messageMusic"></audio>
+
+</section>
+
+
+<script src="js/zepto.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
